@@ -2,10 +2,29 @@
 
 import { useState } from "react";
 import { navLinks } from "@/lib/data";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LINE_URL = "https://lin.ee/VrLydCg";
+
+const trackLineConversion = () => {
+  if (typeof window !== "undefined") {
+    // 1. ส่งข้อมูลบอก Google Ads (เปลี่ยนรหัสและป้ายกำกับตามบัญชีจริงของลูกค้า)
+    if ((window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-XXXXXXXXX/สติ๊กเกอร์Conversionของคุณ',
+        'value': 1.0,
+        'currency': 'THB'
+      });
+    }
+
+    // 2. ส่งข้อมูลบอก Facebook Ads / Meta Pixel
+    if ((window as any).fbq) {
+      (window as any).fbq('track', 'Contact');
+    }
+  }
+};
 
 function LineIcon() {
   return (
@@ -63,17 +82,23 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-navy/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-        
-        {/* โลโก้ฝั่งซ้าย - ผูกระบบเลื่อนขึ้นบนสุดไว้ให้ด้วยครับ */}
-        <a 
+       <Link 
           href="/" 
           onClick={(e) => handleLinkClick(e, "/")}
-          className="shrink-0"
-        >
+          className="flex shrink-0 items-center gap-3"
+        > 
+          <Image
+            src="/images/logo.png" 
+            alt="RIT VAN VIP โลโก้บริการเช่ารถตู้ VIP" 
+           width={200}  
+          height={65} 
+          priority     
+          className="h-11 w-auto object-contain"
+          />
           <span className="gold-text text-xl font-extrabold tracking-wide sm:text-2xl">
             Premium Van
           </span>
-        </a>
+        </Link>
 
         {/* =================  (Desktop Nav) ================= */}
         <nav className="hidden items-center gap-8 lg:flex">
@@ -93,6 +118,7 @@ export default function Header() {
           href={LINE_URL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackLineConversion}
           className="hidden items-center gap-2 rounded-full bg-lineGreen px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-lineGreen/20 transition-transform hover:scale-105 lg:inline-flex"
         >
           <LineIcon />
@@ -132,7 +158,10 @@ export default function Header() {
             href={LINE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              setOpen(false);
+              trackLineConversion();
+            }}
             className="inline-flex items-center gap-2 rounded-full bg-lineGreen px-5 py-2.5 text-sm font-semibold text-white"
           >
             <LineIcon />
