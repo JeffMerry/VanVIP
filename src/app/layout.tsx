@@ -35,8 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.png", // 👈 ลิงก์รูปภาพหลัก (ขนาดแนะนำ 1200x630px) เวลาแชร์ในไลน์รูปนี้จะโชว์ทันที
-        width: 1200,
+        url: "/images/logo.png", 
         height: 630,
         alt: "Premium Van Service รถตู้พรีเมียมพร้อมให้บริการ",
       },
