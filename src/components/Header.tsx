@@ -71,7 +71,7 @@ export default function Header() {
           className="shrink-0"
         >
           <span className="gold-text text-xl font-extrabold tracking-wide sm:text-2xl">
-            RIT VAN VIP
+            Premium Van
           </span>
         </a>
 

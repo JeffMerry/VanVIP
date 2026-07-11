@@ -182,7 +182,7 @@ export default function ContactPage() {
                 จุดเด่นของเรา
               </span>
               <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-[#1a253c] tracking-tight">
-                ทำไมต้องเลือก RIT VAN VIP
+                ทำไมต้องเลือก Premium Van
               </h2>
             </div>
 

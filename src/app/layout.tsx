@@ -10,9 +10,9 @@ const prompt = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: "RIT VAN VIP | บริการเช่ารถตู้ VIP พร้อมคนขับมืออาชีพ ทั่วไทย",
+  title: "Premium Van Service | บริการเช่ารถตู้ VIP พร้อมคนขับมืออาชีพ ทั่วไทย",
   description:
-    "RIT VAN VIP บริการเช่ารถตู้ VIP พร้อมคนขับมืออาชีพ ทั่วไทย ในราคาสุดพิเศษ รถใหม่ สะอาด ปลอดภัย บริการ 24 ชั่วโมง",
+    "Premium Van Service บริการเช่ารถตู้ VIP พร้อมคนขับมืออาชีพ ทั่วไทย ในราคาสุดพิเศษ รถใหม่ สะอาด ปลอดภัย บริการ 24 ชั่วโมง",
 };
 
 export default function RootLayout({

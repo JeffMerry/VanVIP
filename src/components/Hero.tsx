@@ -34,7 +34,7 @@ export default function Hero() {
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-5 pb-0 text-center">
         <h1 data-aos="fade-up" className="gold-text text-5xl font-extrabold tracking-wide sm:text-6xl md:text-7xl">
-          RIT VAN VIP
+          Premium Van
         </h1>
         <p  data-aos="fade-up"
           data-aos-delay="150" className="mt-5 max-w-2xl text-balance text-base text-white/90 sm:text-lg">

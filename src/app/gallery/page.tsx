@@ -112,7 +112,7 @@ export default function GalleryPage() {
               คลังภาพความทรงจำ
             </span>
             <h1 className="text-3xl sm:text-4xl font-black text-[#1a253c] tracking-tight mb-4">
-              แกลเลอรี่ภาพถ่าย RIT VAN VIP
+              แกลเลอรี่ภาพถ่าย Premium Van
             </h1>
             <p className="text-sm text-slate-500 max-w-md leading-relaxed">
               สัมผัสความหรูหราของสภาพรถตู้จริง และรอยยิ้มความประทับใจจากลูกค้าที่เลือกใช้บริการของเราทั่วไทย
@@ -159,7 +159,7 @@ export default function GalleryPage() {
                   >
                     <Image
                       src={item.image}
-                      alt="RIT VAN VIP Gallery"
+                      alt="Premium Van Gallery"
                       fill
                       sizes="(max-w-640px) 50vw, (max-w-1024px) 25vw, 16vw"
                       className="object-cover transition-transform duration-300 group-hover:scale-102"

@@ -80,7 +80,7 @@ export default function Footer() {
               <MailIcon /> chanlit.cc@gmail.com
             </li>
             <li className="flex items-center gap-2">
-              <GlobeIcon /> www.ritvanvip.com
+              <GlobeIcon /> www.premium-van-service.com
             </li>
           </ul>
         </div>
@@ -93,12 +93,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FacebookIcon /> Facebook
             </li>
-            <li className="flex items-center gap-2">
-              <InstagramIcon /> Instagram
-            </li>
-            <li className="flex items-center gap-2">
-              <YoutubeIcon /> RIT VAN VIP
-            </li>
+            
           </ul>
         </div>
 
@@ -132,7 +127,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-white/40">
-        RIT VAN VIP | สงวนลิขสิทธิ์ Page Redesign
+        Premium Van | สงวนลิขสิทธิ์ Page Redesign
       </div>
 
       <a
