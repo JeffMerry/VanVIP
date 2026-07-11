@@ -2,7 +2,7 @@ export interface Vehicle {
   id: number;
   name: string;
   image: string;
-  seats: number;
+  seats: string;
   transmission: "Automatic" | "Manual";
   doors: number;
   fuel: string;

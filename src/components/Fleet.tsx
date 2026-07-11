@@ -106,9 +106,9 @@ export default function Fleet() {
                   <hr className="my-5 border-slate-100" />
 
                   <div className="grid grid-cols-2 gap-x-5 gap-y-4 text-sm font-medium text-slate-600">
-                    <div className="flex items-center gap-2.5">
+                    <div className="flex items-center gap-2">
                       <Users className="h-5 w-5 shrink-0 text-amber-500/90" />
-                      <span>{vehicle.seats} Seats</span>
+                      <span className="whitespace-nowrap">{vehicle.seats} Seats</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <Settings className="h-5 w-5 shrink-0 text-amber-500/90" />
