@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="th" className={prompt.variable}>
       <body className="bg-surface font-prompt text-navy antialiased">
-        {children}
+          {children}
       </body>
     </html>
   );

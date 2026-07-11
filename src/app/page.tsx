@@ -15,21 +15,23 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,           // ความเร็วตอนแอนิเมชันเด้งขึ้นมา (1000 มิลลิวินาที = 1 วินาที)
-      once: true,              // ให้แสดงแอนิเมชันเพียงรอบเดียวตอนเลื่อนผ่านครั้งแรก
-      easing: "ease-out-quad", // รูปแบบความนุ่มนวลในการเคลื่อนที่
+      duration: 1000,          
+      once: true,             
+      easing: "ease-out-quad", 
     });
   }, []);
 
   return (
-    <main >
+    <>
       <Header />
-      <Hero />
-      <Intro />
-      <Fleet />
-      <WhyChooseUs />
-      <Testimonials />
-      <Footer />
-    </main>
+      <main className="relative w-full overflow-x-hidden">
+        <Hero />
+        <Intro />
+        <Fleet />
+        <WhyChooseUs />
+        <Testimonials />
+        <Footer />
+      </main>
+    </>
   );
 }

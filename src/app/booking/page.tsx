@@ -128,7 +128,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-
+      <main className="relative w-full overflow-x-hidden">
       <section id="booking" className="bg-white px-5 pt-14 pb-20 sm:pt-20 sm:pb-28 text-slate-800">
         <div className="mx-auto max-w-5xl">
 
@@ -263,6 +263,7 @@ export default function ContactPage() {
         </div>
       </section>
       <Footer/>
+      </main>
     </>
   );
 }

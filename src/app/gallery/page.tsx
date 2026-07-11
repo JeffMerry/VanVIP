@@ -102,7 +102,7 @@ export default function GalleryPage() {
   return (
     <>
       <Header />
-
+      <main className="relative w-full overflow-x-hidden">
       {/* bg-white คลีน ๆ เว้นระยะด้านบน pt-24 เผื่อพื้นที่ให้ไม่ชนกับแถบ Header เมนูครับ */}
       <section className="bg-white px-4 pt-24 pb-16 min-h-screen">
         <div className="mx-auto max-w-[1400px]">
@@ -177,6 +177,7 @@ export default function GalleryPage() {
         </div>
       </section>
       <Footer/>
+    </main>
     </>
   );
 }
