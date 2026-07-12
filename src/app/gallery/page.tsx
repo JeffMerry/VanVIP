@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const galleryData = [
   { id: 1, category: "exterior", image: "/images/gallery/exterior/car-1.jpg" },
   { id: 2, category: "exterior", image: "/images/gallery/exterior/car-2.jpg" },
-  { id: 3, category: "exterior", image: "/images/gallery/exterior/car-3.jpg" },
+  { id: 3, category: "exterior", image: "/images/gallery/exterior/car-14.jpg" },
   { id: 4, category: "exterior", image: "/images/gallery/exterior/car-4.jpg" },
   { id: 5, category: "exterior", image: "/images/gallery/exterior/car-5.jpg" },
   { id: 6, category: "exterior", image: "/images/gallery/exterior/car-6.jpg" },
@@ -30,24 +30,38 @@ const galleryData = [
   { id: 15, category: "exterior", image: "/images/gallery/exterior/car-9.jpg" },
   { id: 16, category: "exterior", image: "/images/gallery/exterior/car-10.jpg" },
 
-  { id: 17, category: "interior", image: "/images/gallery/interior/car-5.jpg" },
+  { id: 17, category: "interior", image: "/images/gallery/interior/car-15.jpg" },
   { id: 18, category: "interior", image: "/images/gallery/interior/car-6.jpg" },
-  { id: 19, category: "interior", image: "/images/gallery/interior/car-7.jpg" },
-  { id: 20, category: "interior", image: "/images/gallery/interior/car-8.jpg" },
+  { id: 19, category: "interior", image: "/images/gallery/interior/car-16.jpg" },
+  { id: 20, category: "interior", image: "/images/gallery/interior/car-17.jpg" },
 
 
-  { id: 21, category: "customers", image: "/images/gallery/customers/car-3.jpg" },
+  { id: 21, category: "customers", image: "/images/gallery/customers/car-11.jpg" },
   { id: 22, category: "customers", image: "/images/gallery/customers/car-4.jpg" },
   { id: 23, category: "customers", image: "/images/gallery/customers/car-5.jpg" },
   { id: 24, category: "customers", image: "/images/gallery/customers/car-6.jpg" },
 
   { id: 25, category: "exterior", image: "/images/gallery/exterior/car-11.jpg" },
   { id: 26, category: "exterior", image: "/images/gallery/exterior/car-12.jpg" },
-  { id: 27, category: "exterior", image: "/images/gallery/exterior/car-13.jpg" },
+  { id: 27, category: "exterior", image: "/images/gallery/exterior/car-15.jpg" },
 
   { id: 28, category: "interior", image: "/images/gallery/interior/car-9.jpg" },
   { id: 29, category: "interior", image: "/images/gallery/interior/car-10.jpg" },
   { id: 30, category: "interior", image: "/images/gallery/interior/car-11.jpg" },
+  { id: 31, category: "interior", image: "/images/gallery/interior/car-18.jpg" },
+  { id: 32, category: "interior", image: "/images/gallery/interior/car-19.jpg" },
+  { id: 33, category: "interior", image: "/images/gallery/interior/car-20.jpg" },
+  { id: 34, category: "interior", image: "/images/gallery/interior/car-21.jpg" },
+  { id: 35, category: "interior", image: "/images/gallery/interior/car-22.jpg" },
+
+    { id: 36, category: "exterior", image: "/images/gallery/exterior/car-16.jpg" },
+  { id: 37, category: "exterior", image: "/images/gallery/exterior/car-17.jpg" },
+  { id: 38, category: "exterior", image: "/images/gallery/exterior/car-18.jpg" },
+   { id: 39, category: "exterior", image: "/images/gallery/exterior/car-19.jpg" },
+
+     { id: 40, category: "customers", image: "/images/gallery/customers/car-12.jpg" },
+  { id: 41, category: "customers", image: "/images/gallery/customers/car-13.jpg" },
+
 ] as const;
 
 // 2. หมวดหมู่ฟิลเตอร์ตามรูปเรฟเฟอเรนซ์
